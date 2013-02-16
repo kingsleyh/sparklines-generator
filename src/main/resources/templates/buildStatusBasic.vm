@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="/$processing_js_url"></script>
+</head>
+<body>
+<script type="application/processing" data-processing-target="build-status">
+    void setup()
+    {
+    size(120, 19);
+    background(#FFFFFF);
+    stroke(#424242);
+    fill(#424242);
+    rect(0, 3, 79, 15, 5, 0, 0, 5);
+
+    font = loadFont("arial");
+    textFont(font);
+
+    fill(#FFFFFF);
+    text("build status", 4, 15);
+
+    stroke($status.getColour());
+    fill($status.getColour());
+    rect(69,3,50,15, 0, 5, 5, 0);
+
+    fill(#FFFFFF);
+    text("$status.getText()", 73, 15);
+
+    }
+    void mousePressed() {
+    link("/$job_path", "_new");
+    }
+</script>
+<canvas id="build-status"></canvas>
+</body>
+</html>
