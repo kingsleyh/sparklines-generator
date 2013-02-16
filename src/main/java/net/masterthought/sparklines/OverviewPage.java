@@ -9,7 +9,7 @@ import java.io.FileWriter;
 import java.io.Writer;
 import java.util.Properties;
 
-public class OverviewPage {
+public class OverviewPage extends AbstractPage{
 
     private final String pluginUrlPath;
     private final File targetBuildDirectory;
@@ -28,19 +28,6 @@ public class OverviewPage {
         generateSparkLine("overview.html", targetBuildDirectory, template, context);
     }
 
-    private void generateSparkLine(String fileName, File targetBuildDirectory, Template template, VelocityContext context) throws Exception {
-        Writer writer = new FileWriter(new File(targetBuildDirectory, fileName));
-        template.merge(context, writer);
-        writer.flush();
-        writer.close();
-    }
-
-    private Properties getProperties() {
-        Properties props = new Properties();
-        props.setProperty("resource.loader", "class");
-        props.setProperty("class.resource.loader.class", "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
-        return props;
-    }
 
 }
 

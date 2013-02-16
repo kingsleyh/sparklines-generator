@@ -9,7 +9,7 @@ import java.io.FileWriter;
 import java.io.Writer;
 import java.util.Properties;
 
-public class BuildStatusJobName {
+public class BuildStatusJobName extends AbstractPage{
 
     private File targetBuildDirectory;
     private final String buildStatus;
@@ -46,18 +46,6 @@ public class BuildStatusJobName {
         generateSparkLine("job-status.html", targetBuildDirectory, template, context);
     }
 
-    private void generateSparkLine(String fileName, File targetBuildDirectory, Template template, VelocityContext context) throws Exception {
-        Writer writer = new FileWriter(new File(targetBuildDirectory, fileName));
-        template.merge(context, writer);
-        writer.flush();
-        writer.close();
-    }
 
-    private Properties getProperties() {
-        Properties props = new Properties();
-        props.setProperty("resource.loader", "class");
-        props.setProperty("class.resource.loader.class", "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
-        return props;
-    }
 
 }

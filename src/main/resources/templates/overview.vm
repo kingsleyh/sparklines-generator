@@ -1,48 +1,84 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Jenkins-Sparklines</title>
-<link href="/$css_url" rel="stylesheet" type="text/css" media="all" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Jenkins-Sparklines</title>
+    <link href="/$css_url" rel="stylesheet" type="text/css" media="all"/>
 </head>
 <body>
 <div id="header" class="container">
-	<div id="logo">
-		<h1><a href="#">Spark<span>Lines</span></a></h1>
-	</div>
-	<div id="menu">
-		<ul>
-			<!-- <li class="active"><a href="#" title="">Build</a></li> -->
-		</ul>
-	</div>
+    <div id="logo">
+        <h1><a href="#">Spark<span>Lines</span></a></h1>
+    </div>
+    <div id="menu">
+        <ul>
+            <!-- <li class="active"><a href="#" title="">Build</a></li> -->
+        </ul>
+    </div>
 </div>
 <div id="wrapper">
-	<div id="wrapper-bgbtm">
-		<div id="featured" class="container">
+    <div id="wrapper-bgbtm">
+        <div id="featured" class="container">
 
-			<p>Jenkins-Sparklines provides a set of useful build status snippets that can be pasted onto webpages or git README pages</p>
+            <p><b>Jenkins-Sparklines provides a set of useful build status snippets that can be pasted onto webpages or git
+                README pages</b></p>
 
-			<div id="build-status">
-			<iframe width="130" height="30" src="http://localhost:8080/job/cucumber-jvm/jenkins-sparklines/build-status.html" frameborder="0" scrolling="no" seamless="seamless"></iframe>
-		    <p style="background-color:#F2F2F2;padding:10px;border:3px solid darkgray;">
-&lt;iframe width="130" height="30" src="http://localhost:8080/job/cucumber-jvm/jenkins-sparklines/build-status.html" frameborder="0" scrolling="no" seamless="seamless"&gt;&lt;/iframe&gt;
-		    </p>
-		    </div>
+            <div id="build-status">
+                <iframe width="130" height="30"
+                        src="http://localhost:8080/job/cucumber-jvm/jenkins-sparklines/build-status.html"
+                        frameborder="0" scrolling="no" seamless="seamless"></iframe>
+                <p style="background-color:#F2F2F2;padding:10px;border:3px solid darkgray;">
+                    &lt;iframe width="130" height="30"
+                    src="http://localhost:8080/job/cucumber-jvm/jenkins-sparklines/build-status.html" frameborder="0"
+                    scrolling="no" seamless="seamless"&gt;&lt;/iframe&gt;
+                </p>
+            </div>
 
-				<div id="job-status">
-				<iframe width="200" height="30" src="http://localhost:8080/job/cucumber-jvm/jenkins-sparklines/job-status.html" frameborder="0" scrolling="no" seamless="seamless"></iframe>
-			    <p style="background-color:#F2F2F2;padding:10px;border:3px solid darkgray;">
-	&lt;iframe width="200" height="30" src="http://localhost:8080/job/cucumber-jvm/jenkins-sparklines/job-status.html" frameborder="0" scrolling="no" seamless="seamless"&gt;&lt;/iframe&gt;
-			    </p>
-			    </div>
+            <div id="job-status">
+                <iframe width="200" height="30"
+                        src="http://localhost:8080/job/cucumber-jvm/jenkins-sparklines/job-status.html" frameborder="0"
+                        scrolling="no" seamless="seamless"></iframe>
+                <p style="background-color:#F2F2F2;padding:10px;border:3px solid darkgray;">
+                    &lt;iframe width="200" height="30"
+                    src="http://localhost:8080/job/cucumber-jvm/jenkins-sparklines/job-status.html" frameborder="0"
+                    scrolling="no" seamless="seamless"&gt;&lt;/iframe&gt;
+                </p>
+            </div>
 
-			<!-- height place holder -->
-			<div style="height:400px;"></div>
-		</div>
-	</div>
+            <div id="job-history-status">
+                <iframe width="320" height="70"
+                        src="http://localhost:8080/job/cucumber-jvm/jenkins-sparklines/job-status-history.html"
+                        frameborder="0"
+                        scrolling="no" seamless="seamless"></iframe>
+                <p style="background-color:#F2F2F2;padding:10px;border:3px solid darkgray;">
+                    &lt;iframe width="320" height="70"
+                    src="http://localhost:8080/job/cucumber-jvm/82/jenkins-sparklines/job-status-history.html"
+                    frameborder="0"
+                    scrolling="no" seamless="seamless"&gt;&lt;/iframe&gt;
+                </p>
+            </div>
+
+
+            <div id="job-history-status-pie">
+                <iframe width="320" height="70"
+                        src="http://localhost:8080/job/cucumber-jvm/jenkins-sparklines/job-status-history-pie.html"
+                        frameborder="0"
+                        scrolling="no" seamless="seamless"></iframe>
+                <p style="background-color:#F2F2F2;padding:10px;border:3px solid darkgray;">
+                    &lt;iframe width="320" height="70"
+                    src="http://localhost:8080/job/cucumber-jvm/82/jenkins-sparklines/job-status-history-pie.html"
+                    frameborder="0"
+                    scrolling="no" seamless="seamless"&gt;&lt;/iframe&gt;
+                </p>
+            </div>
+
+            <!-- height place holder -->
+            <div style="height:400px;"></div>
+        </div>
+    </div>
 </div>
 <div id="footer">
-	<p>Jenkins-Sparklines</p>
+    <p>Jenkins-Sparklines</p>
 </div>
 </body>
 </html>

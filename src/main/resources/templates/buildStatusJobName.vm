@@ -8,7 +8,7 @@
     void setup()
     {
     size($canvas_length, 19);
-    background(#FFFFFF);
+    background(0,0);
     stroke(#424242);
     fill(#424242);
     rect(0, 3, $item_length_ext, 15, 5, 0, 0, 5);
